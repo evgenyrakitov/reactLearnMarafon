@@ -1,18 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header";
+import Layout from "./components/Layout";
+import Footer from "./components/Footer";
+import BackGroundImg from './assets/bg1.jpg';
 
-function App() {
-    return ( <div className = "App">
-        <header className = "App-header">
-        <img src = { logo } className = "App-logo" alt = "logo"/>
-        <p>
-          Hello world, React.js!
-        </p>
-         <a className = "App-link" href = "https://reactjs.org" target = "_blank" rel = "noopener noreferrer">
-            Learn React
-         </a> </header>
-    </div>
-    );
-}
+
+const App =() => {
+    const bgc = "red";
+    return (
+        <>
+           <Header
+               title='This is title'
+               descr='This is description!'
+           />
+            <Layout
+                title=''
+                descr=''
+                urlBg={BackGroundImg}
+                colorBg={null}
+            />
+            <Layout
+                title=''
+                descr=''
+                urlBg={null}
+                colorBg={bgc}
+            />
+            <Layout
+                title=''
+                descr=''
+                urlBg={BackGroundImg}
+                colorBg={null}
+            />
+            <Footer />
+        </>
+    )
+};
 
 export default App;
