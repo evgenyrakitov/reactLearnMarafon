@@ -6,7 +6,6 @@ const Layout = ({title, descr, urlBg, colorBg}) => {
         backgroundImage: urlBg && `url("${urlBg}")`,
         backgroundColor: colorBg
     };
-    console.log("####: urlBg", layoutStyle);
     return (
         <section
             className={s.root}
