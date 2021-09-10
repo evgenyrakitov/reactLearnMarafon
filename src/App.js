@@ -15,20 +15,20 @@ const App =() => {
                descr='This is description!'
            />
             <Layout
-                title=''
-                descr=''
+                title='This is title'
+                descr='This is description'
                 urlBg={BackGroundImg}
                 colorBg={null}
             />
             <Layout
-                title=''
-                descr=''
+                title='This is title'
+                descr='This is description'
                 urlBg={null}
                 colorBg={bgc}
             />
             <Layout
-                title=''
-                descr=''
+                title='This is title'
+                descr='This is description'
                 urlBg={BackGroundImg}
                 colorBg={null}
             />
